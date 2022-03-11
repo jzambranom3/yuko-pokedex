@@ -21,3 +21,5 @@ Lenguaje de programación
 > **Frameworks**
 - Django 
 - Bootstrapp
+
+Ver sitio: [GitHub Pages](https://yuko-pokedex.herokuapp.com/).
