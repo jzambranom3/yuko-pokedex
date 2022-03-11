@@ -17,14 +17,19 @@
         <div class="col-lg-4 col-md-8 col-sm-8 py-5">
           <label for="nombrePokemon" class="form-label h1 text-center text-white"> Descubre la información de tu Pokémon </label>
           <br><br>
-          <input class="form-control" list="datalistOptions" id="nombrePokemon" placeholder="Escribe el nombre...">
-          <datalist id="datalistOptions">
-            <option value="Bulbasaur">
-            <option value="Squirtle">
-            <option value="Pidgeot">
-            <option value="Pikachu">
-            <option value="Clefable">
-          </datalist>
+          <div class="input-group">
+            <button type="button" class="btn btn-warning btn-lg" onclick="buscarPokemon()">
+              Buscar
+            </button>
+            <input class="form-control" list="datalistOptions" id="nombrePokemon" placeholder="Escribe el nombre...">
+            <datalist id="datalistOptions">
+              <option value="Bulbasaur">
+              <option value="Squirtle">
+              <option value="Pidgeot">
+              <option value="Pikachu">
+              <option value="Clefable">
+            </datalist>
+          </div>
         </div>
       </div>
       <div class="row justify-content-center text-center">
@@ -120,7 +125,7 @@
             </div>
           </div>
         {%else%}
-          <div style="
+          <button onclick="buscarPokemon()" style="
             width: 20px;
             height: 20px;
             padding: 3%;
@@ -130,8 +135,7 @@
             border: solid 4px #2F4F4F;
             margin-right:auto;
             margin-top: -3rem;
-            position: absolute;">
-          </div>
+            position: absolute;"></button> 
           {%if error %}
           <div class="row justify-content-center" style="margin-top: 5rem;">
             <div class="col-lg-6 col-xl-6 col-md-8 col-sm-12">
@@ -162,10 +166,16 @@
       campo.addEventListener('keyup', function(e) {
         var keycode = e.keyCode || e.which;
         if (keycode == 13) {
-          document.getElementById('nombrePokemon').disabled = true;
-          window.location.href = '/' + campo.value;
+          buscarPokemon();
         }
       });
+
+
+
+      function buscarPokemon() {
+        document.getElementById('nombrePokemon').disabled = true;
+        location.href = '/' + campo.value;
+      }
     </script>
 
   </body>
