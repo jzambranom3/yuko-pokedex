@@ -1,4 +1,4 @@
-# yuko-pokedex
+# Yuko pokedex
 Aplicación web que permite buscar informacion de un pokemon:
 > **Funcionalidad:**
 1. Ingresamos el nombre del pokemon que deseamos obtener la información
