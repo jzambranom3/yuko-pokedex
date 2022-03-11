@@ -14,7 +14,7 @@ Aplicación web que permite buscar informacion de un pokemon:
     - Estadisticas de combate 
 > **API**
 - Pokemon Free (Consumo de API en el backend)
-> **Lenguaje de programación**
+> **Lenguajes de programación**
 - Python (Backend)
 - JavaScript (Fronted)
 - CSS (Frontend)
