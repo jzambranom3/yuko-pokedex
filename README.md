@@ -22,4 +22,4 @@ Lenguaje de programación
 - Django 
 - Bootstrapp
 
-Ver sitio: [GitHub Pages](https://yuko-pokedex.herokuapp.com/).
+Ver sitio: [Pokedex](https://yuko-pokedex.herokuapp.com/).
